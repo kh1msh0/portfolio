@@ -12,8 +12,8 @@ const introdata = {
     second: "I develop mobile apps",
     third: "I code cool websites",
   },
-  description: "Building Mobile/Web apps that make a difference.",
-  your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+  description: "Building Mobile/Web Apps that make a difference.",
+  your_img_url: require("./assets/images/me1.png"),
 };
 
 const dataabout = {
