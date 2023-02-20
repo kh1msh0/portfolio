@@ -22,8 +22,8 @@ export const ContactUs = () => {
     setFormdata({ loading: true });
 
     const templateParams = {
-      from_name: formData.email,
-      user_name: formData.name,
+      from_name: formData.name,
+      from_email:formData.email,
       to_name: contactConfig.YOUR_EMAIL,
       message: formData.message,
     };
@@ -101,9 +101,9 @@ export const ContactUs = () => {
               </a>
               <br />
               <br />
-              {contactConfig.hasOwnProperty("YOUR_FONE") ? (
+              {contactConfig.hasOwnProperty("YOUR_PONE") ? (
                 <p>
-                  <strong>Phone:</strong> {contactConfig.YOUR_FONE}
+                  <strong>Phone:</strong> {contactConfig.YOUR_PONE}
                 </p>
               ) : (
                 ""
