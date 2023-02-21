@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import * as emailjs from "emailjs-com";
 import "./style.css";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 import { meta } from "../../content_option";
 import { Container, Row, Col, Alert } from "react-bootstrap";
 import { contactConfig } from "../../content_option";
@@ -23,7 +23,7 @@ export const ContactUs = () => {
 
     const templateParams = {
       from_name: formData.name,
-      from_email:formData.email,
+      from_email: formData.email,
       to_name: contactConfig.YOUR_EMAIL,
       message: formData.message,
     };
@@ -65,7 +65,7 @@ export const ContactUs = () => {
   };
 
   return (
-    <HelmetProvider>
+    <>
       <Container>
         <Helmet>
           <meta charSet="utf-8" />
@@ -162,6 +162,6 @@ export const ContactUs = () => {
         </Row>
       </Container>
       <div className={formData.loading ? "loading-bar" : "d-none"}></div>
-    </HelmetProvider>
+    </>
   );
 };

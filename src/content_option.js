@@ -1,8 +1,8 @@
 const logotext = "GEORGEKHIM";
 const meta = {
-  title: "John Doe",
+  title: "George Khimshiashvili React Native developer",
   description:
-    "I’m John Doe data scientist _ Full stack devloper,currently working in Berlin",
+    "I’m George Khimshiashvili React Native Developer,currently working in Tbilisi",
 };
 
 const introdata = {

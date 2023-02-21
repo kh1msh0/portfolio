@@ -1,18 +1,41 @@
 import React from "react";
 import "./style.css";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
 import { introdata, meta } from "../../content_option";
 import { Link } from "react-router-dom";
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyA4EY6vz3Z8fgFuhOnTfypbSY4hI36z11o",
+  authDomain: "portfolio-93d11.firebaseapp.com",
+  projectId: "portfolio-93d11",
+  storageBucket: "portfolio-93d11.appspot.com",
+  messagingSenderId: "574314616998",
+  appId: "1:574314616998:web:7e52e8a6a33e045b7abc67",
+  measurementId: "G-CLWBGBXEXY",
+};
 
 export const Home = () => {
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
   return (
-    <HelmetProvider>
+    <>
       <section id="home" className="home">
         <Helmet>
           <meta charSet="utf-8" />
           <title> {meta.title}</title>
           <meta name="description" content={meta.description} />
+          <meta name="title" content="react native developer" />
+          <meta
+            name="keywords"
+            content="react, react native, mobile developer"
+          />
+          <meta name="robots" content="index, follow" />
+          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+          <meta name="language" content="English" />
+          <link rel="canonical" href="/" />
         </Helmet>
         <div className="intro_sec d-block d-lg-flex align-items-center ">
           <div
@@ -61,6 +84,6 @@ export const Home = () => {
           </div>
         </div>
       </section>
-    </HelmetProvider>
+    </>
   );
 };
