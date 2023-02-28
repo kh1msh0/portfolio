@@ -92,6 +92,28 @@ const services = [
   },
 ];
 
+const animations = [
+  {
+    gif: require("./assets/images/LavaLamp.gif"),
+    href: "https://github.com/4TWIGGERS/react-native-LavaLAmp-Pong",
+  },
+  {
+    gif: require("./assets/images/Swaying-scroll.gif"),
+    href: "https://github.com/4TWIGGERS/swaying-scroll",
+  },
+  {
+    gif: require("./assets/images/soccer.gif"),
+    href: "https://github.com/4TWIGGERS/SoccerAnimation",
+  },
+  {
+    gif: require("./assets/images/refresh.gif"),
+    href: "https://github.com/4TWIGGERS/react-native-fresh-refresh",
+  },
+  {
+    gif: require("./assets/images/pong.gif"),
+    href: "https://github.com/4TWIGGERS/react-native-LavaLAmp-Pong",
+  },
+];
 const dataportfolio = [
   {
     img: require("./assets/images/credo.webp"),
@@ -173,4 +195,5 @@ export {
   contactConfig,
   socialprofils,
   logotext,
+  animations,
 };
